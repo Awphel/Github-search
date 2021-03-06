@@ -226,7 +226,9 @@ class App extends React.Component {
 
     @media only screen and (max-width: 500px) {
       .formField{
+        float: none;
         width: 100%;
+        padding: 0;
         display: block;
       }
       .userData {
