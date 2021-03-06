@@ -235,7 +235,12 @@ class App extends React.Component {
         width: 90%;
         display: block;
       }
-}
+    }
+    @media only screen and (max-width: 768px){
+      .formField{
+        margin-right: 2em;
+      }
+    }
      `
     } < /style>
     </>
