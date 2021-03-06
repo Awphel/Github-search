@@ -9,7 +9,7 @@ class App extends React.Component {
       repos: '',
       type: '',
       activity: [],
-      username: 'toggl',
+      username: 'airbnb',
       placeholder:'Enter username'
     };
     // fix the this value
@@ -92,7 +92,6 @@ class App extends React.Component {
         type="text"
         name="username"
         placeholder="Enter username here..."
-        value={ this.state.username }
         onChange={ this.handleChange }
       /><br/>
 
@@ -110,6 +109,7 @@ class App extends React.Component {
       </p>
       <p>
         <b>Type</b>: <span>{this.state.type}</span>
+        <button className="saveData">Save data</button>
       </p>
       <hr />
         <h2>USER ACTIVITY</h2>
@@ -183,6 +183,7 @@ class App extends React.Component {
       border-radius: .3em;
       transition: .3s;
       padding: .65em;
+      cursor: pointer;
       width: 12em;
       color: #fff;
       background-color: #009dcf;
@@ -197,6 +198,21 @@ class App extends React.Component {
       display: table-cell;
       color: #000099;
       font-size: .65em;
+    }
+    .saveData {
+      float: right;
+      border: 1px solid grey;
+      color: #grey;
+      transition: .3s;
+      cursor: pointer;
+      padding: .5em;
+      border-radius: .3em;
+      background-color: #f0f0f0;
+    }
+    .saveData:hover {
+      background-color: #009dcf;
+      color: #fff;
+      border: none;
     }
 
      `
