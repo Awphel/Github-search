@@ -178,7 +178,6 @@ class App extends React.Component {
     }
     .search-btn {
       margin-top: 1em;
-      margin-left: 0.5em;
       border: none;
       border-radius: .3em;
       transition: .3s;
@@ -214,7 +213,17 @@ class App extends React.Component {
       color: #fff;
       border: none;
     }
-
+    input {
+      border-radius: 2em;
+      border: 1px solid grey;
+      padding: .5em;
+    }
+    input:focus {
+      outline: none;
+      border: 2px solid;
+      -webkit-box-shadow: 0px 0px 15px -1px #129AFF;
+      box-shadow: 0px 0px 15px -1px #129AFF;
+    }
      `
     } < /style>
     </>
