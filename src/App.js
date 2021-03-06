@@ -127,7 +127,6 @@ class App extends React.Component {
   <
   style jsx global > {
     `@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
-
     h2 {
       color: #009dcf;
     }
@@ -224,6 +223,17 @@ class App extends React.Component {
       -webkit-box-shadow: 0px 0px 15px -1px #129AFF;
       box-shadow: 0px 0px 15px -1px #129AFF;
     }
+
+    @media only screen and (max-width: 500px) {
+      .formField{
+        width: 100%;
+        display: block;
+      }
+      .userData {
+        width: 90%;
+        display: block;
+      }
+}
      `
     } < /style>
     </>
