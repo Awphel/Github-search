@@ -9,7 +9,7 @@ class App extends React.Component {
       repos: '',
       type: '',
       activity: [],
-      username: 'airbnb',
+      username: 'apple',
       placeholder:'Enter username'
     };
     // fix the this value
